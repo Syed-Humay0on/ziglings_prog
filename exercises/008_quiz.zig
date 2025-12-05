@@ -32,11 +32,9 @@ pub fn main() void {
     // to begin with.
     lang[0] = letters[x];
 
-    x = 3;
-    lang[???] = letters[x];
+    lang[1] = letters[3];
 
-    x = ???;
-    lang[2] = letters[???];
+    lang[2] = letters[5];
 
     // We want to "Program in Zig!" of course:
     std.debug.print("Program in {s}!\n", .{lang});
