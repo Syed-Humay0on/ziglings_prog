@@ -2,7 +2,7 @@
 // A common case for errors is a situation where we're expecting to
 // have a value OR something has gone wrong. Take this example:
 //
-//     var text: Text = getText("foo.txt");
+// var text: Text = getText("foo.txt");
 //
 // What happens if getText() can't find "foo.txt"?  How do we express
 // this in Zig?
@@ -19,7 +19,7 @@ const std = @import("std");
 const MyNumberError = error{TooSmall};
 
 pub fn main() void {
-    var my_number: ??? = 5;
+    var my_number: MyNumberError!u8 = 5;
 
     // Looks like my_number will need to either store a number OR
     // an error. Can you set the type correctly above?
