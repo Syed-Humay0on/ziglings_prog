@@ -31,7 +31,7 @@ pub fn main() void {
 
     std.debug.print("\n", .{});
 }
-
+// Just leraned from Gemini that "with a Tagged Union, Zig forces you to use a switch statement."
 fn printInsect(insect: Insect) void {
     switch (insect) {
         .still_alive => |a| std.debug.print("Ant alive is: {}. ", .{a}),
